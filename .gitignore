@@ -1,0 +1,14 @@
+/.DS_Store
+/keys-generator.dSYM
+/keys-generator.o.dSYM
+/rsa.private
+/rsa.public
+/sign-file.dSYM
+/sign-file.o.dSYM
+/sign_temp.txt
+/signature.enc
+/temp.txt
+/validate-key-and-file.dSYM
+/validate-key-and-file.o.dSYM
+/validate-signed-file.dSYM
+/validate-signed-file.o.dSYM

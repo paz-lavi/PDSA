@@ -11,20 +11,20 @@ run_program(){
     case $1 in
 
   sign-file)
-    ./sign-file.o "${@:2}"
+    sign-file.o "${@:2}"
     ;;
 
   validate-key-and-file)
-    ./validate-key-and-file.o "${@:2}"
+    validate-key-and-file.o "${@:2}"
     ;;
 
   validate-signed-file)
-    ./validate-signed-file.o "${@:2}"
+    validate-signed-file.o "${@:2}"
     ;;
 
   
   keys-generator)
-    ./keys-generator.o "${@:2}"
+    keys-generator.o "${@:2}"
     ;;
 
   help )

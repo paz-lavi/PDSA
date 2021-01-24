@@ -242,12 +242,12 @@ void validateSignedFile(char *filePath)
 void decodeSignature(char *encoded, long *signature, long *keyLength, long *publicKey)
 {
     char *bin, *plain;
-    //printf("\encoded = %s",&encoded[0]);
+    printf("\encoded = %s",&encoded[0]);
 
     zeroWidthToBin(&bin, &encoded[strlen("Singed with P-DSA!")]);
-    //printf("\nbin = %s",&bin[0]);
+    printf("\nbin = %s",&bin[0]);
     binToString(&plain, &bin[0]);
-   // printf("\nplain = %s",&plain[0]);
+    printf("\nplain = %s",&plain[0]);
 
     parseSignature(plain, signature, keyLength, publicKey);
     free(bin);
@@ -265,22 +265,22 @@ void parseSignature(char *decoded, long *signature, long *keyLength, long *publi
 
     while ((token = strtok_r(rest, "$", &rest)))
     {
-        //printf("\nrest = %s, decode = %s",rest,decoded);
+        printf("\nrest = %s, decode = %s",rest,decoded);
 
         switch (i++)
         {
             case 0:
                 *signature = strtol(&token[strlen("signature:")], &ptr, 10);
-              //  printf("\nsignature: %ld",*signature);
+                printf("\nsignature: %ld",*signature);
                 break;
             case 1:
                 *keyLength = strtol(&token[strlen("keyLength:")], &ptr, 10);
-               // printf("\nkeyLength: %ld",*keyLength);
+                printf("\nkeyLength: %ld",*keyLength);
 
                 break;
             case 2:
                 *publicKey = strtol(&token[strlen("publicKey:")], &ptr, 10);
-               // printf("\npublicKey: %ld",*publicKey);
+                printf("\npublicKey: %ld",*publicKey);
 
                 break;
 

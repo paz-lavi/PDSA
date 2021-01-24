@@ -1,0 +1,11 @@
+//
+// Created by Paz Lavi  on 22/01/2021.
+//
+
+#ifndef DIGITALSIGNATURE_16BITSPRIMES_H
+#define DIGITALSIGNATURE_16BITSPRIMES_H
+
+
+long getRandom16BitsPrime();
+
+#endif //DIGITALSIGNATURE_16BITSPRIMES_H

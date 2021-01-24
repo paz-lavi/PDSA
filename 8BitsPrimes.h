@@ -1,0 +1,10 @@
+//
+// Created by Paz Lavi  on 22/01/2021.
+//
+
+#ifndef DIGITALSIGNATURE_8BITSPRIMES_H
+#define DIGITALSIGNATURE_8BITSPRIMES_H
+
+long getRandom8BitsPrime();
+
+#endif //DIGITALSIGNATURE_8BITSPRIMES_H

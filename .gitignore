@@ -12,3 +12,15 @@
 /validate-key-and-file.o.dSYM
 /validate-signed-file.dSYM
 /validate-signed-file.o.dSYM
+/*.o
+/16BitsPrimes.o 
+/8BitsPrimes.o 
+/hashing.o primes.o 
+/32BitsPrimes.o 
+/converters.o 
+/mainFunctions.o 
+/rsa.o
+/sign-file.o
+/validate-key-and-file.o
+/keys-generator.o
+/validate-signed-file.o

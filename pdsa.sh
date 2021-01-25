@@ -44,3 +44,4 @@ if [ $# -eq 0 ]
     else
         run_program $@
 fi
+

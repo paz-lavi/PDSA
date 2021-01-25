@@ -178,10 +178,10 @@ bool validateSignature(char *fileToValidate, char *signatureFileName, char *publ
 
     if (isValidSignature(hash, publicK, keyLength, signature))
     {
-        printf("Valid signature :)\n");
+        printf("✅✅✅ Valid signature ✅✅✅\n");
     } else
     {
-        printf("Not a valid signature :(\n");
+        printf("❌❌❌ Not a valid signature ❌❌❌\n");
     }
     return true;
 }
@@ -229,10 +229,10 @@ void validateSignedFile(char *filePath)
 
     if (isValidSignature(hash, publicKey, keyLength, signature))
     {
-        printf("Valid signature :)\n");
+        printf("✅✅✅ Valid signature ✅✅✅\n");
     } else
     {
-        printf("Not a valid signature :(\n");
+        printf("❌❌❌ Not a valid signature ❌❌❌\n");
     }
 
     fclose(signedFile);

@@ -6,7 +6,7 @@ Mac / Linux CLI  tool for digital file signing and digital signature validation 
 ## Table of Contents
 
 *  [Install](https://github.com/paz-lavi/PDSA/tree/main#install)
- *  [Create Keys pair](https://github.com/paz-lavi/PDSA/tree/main#create-keys-pair)
+*  [Create Keys pair](https://github.com/paz-lavi/PDSA/tree/main#create-keys-pair)
 *  [Sign File](https://github.com/paz-lavi/PDSA/tree/main#sign-file)
 *  [Validate Signed File](https://github.com/paz-lavi/PDSA/tree/main#validate-signed-file)
 *  [Validate Key And File](https://github.com/paz-lavi/PDSA/tree/main#validate-key-and-file)
@@ -17,20 +17,20 @@ Mac / Linux CLI  tool for digital file signing and digital signature validation 
 * Download the the [install script](https://www.dropbox.com/s/7c71p2e0xy46i6f/install.sh?dl=1)
 * Add execute permisions to the file:
 ```bash
-	chmod +x install.sh ## for Mac
-	chmod +x install    ## for Linux
+chmod +x install.sh ## for Mac
+chmod +x install    ## for Linux
 ```
 
 *  Install the CLI tool 
 ```bash
-	sudo ./install.sh ## for Mac
-	sudo ./install    ## for Linux
+sudo ./install.sh ## for Mac
+sudo ./install    ## for Linux
 ```
 
 ## Create Keys pair
 Create pair of key (private and public) to sign files.
 ```bash
-	pdsa keys-generator [-e private key][-d public key] [-b bits size]
+pdsa keys-generator [-e private key][-d public key] [-b bits size]
 ```
 * [-e private key] optional - Private key file. Default `ras.private` 
 * [-d public key] optional - Public key file . Default `ras.public` 
@@ -39,7 +39,7 @@ Create pair of key (private and public) to sign files.
 ## Sign File
 Digitally sign files with the keys you generated using the `keys-generator` command.
 ```bash
-	pdsa sign-file [-f file name / path] [-e private key][-d public key][-s signature output file]
+pdsa sign-file [-f file name / path] [-e private key][-d public key][-s signature output file]
 ```
 * [-f file name / path] **required** -  The file name / path to sign on. Signed file will be saved to the same location as `sign_{FILE NAME}`
 * [-e private key] optional - Private key file. Default `ras.private`. 
@@ -49,14 +49,14 @@ Digitally sign files with the keys you generated using the `keys-generator` comm
 ## Validate Signed File
 Check if a signed file is valid or not. If the signed file is not valid then it probably modified! 
 ```bash
-	pdsa validate-signed-file [-f file name]
+pdsa validate-signed-file [-f file name]
 ```
 * [-f file name / path] **required** -  The signed file name / path to for validate. 
 
 ## Validate Key And File
 check if public key and signature are match to file (not a signed file - the original one!)
 ```bash
-	pdsa validate-key-and-file [-f file name][-d public key][-s signature file]
+pdsa validate-key-and-file [-f file name][-d public key][-s signature file]
 ```
 * [-f file name / path] **required** -  The original file name / path to that signed. 
 * [-d public key] optional - Public key file . Default `ras.public` 

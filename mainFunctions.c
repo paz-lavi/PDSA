@@ -244,7 +244,8 @@ void decodeSignature(char *encoded, long *signature, long *keyLength, long *publ
     char *bin, *plain;
     //printf("\encoded = %s",&encoded[0]);
 
-    zeroWidthToBin(&bin, &encoded[strlen("Singed with P-DSA!")]);
+    zeroWidthToBin(&bin, strtok(&encoded[strlen("Singed with P-DSA!")], "!"));
+    //zeroWidthToBin(&bin, &encoded[strlen("Singed with P-DSA!")]);
     //printf("\nbin = %s",&bin[0]);
     binToString(&plain, &bin[0]);
    // printf("\nplain = %s",&plain[0]);

@@ -15,7 +15,7 @@ OBJ4    = validateSignedFile.o
 SRC4    = validateSignedFile.c
 CC	 = gcc
 FLAGS	 = -g -c -Wall
-LFLAGS	 = 
+LFLAGS	 = -lm
 
 #all: $(OBJS)
 #	$(CC) -g $(OBJS) -g $(OBJ1) -o $(OUT1) $(LFLAGS)

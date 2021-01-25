@@ -82,9 +82,9 @@ long encrypt(long plain, long privateKey, long keyLength)
 
 long isValidSignature(long hash, long publicKey, long keyLength, long expectedCipher)
 {
-    printf("publicKey = %ld , keyLength = %ld , expectedCipher = %ld ," ,publicKey,keyLength,expectedCipher);
-    long d = decrypt(expectedCipher, publicKey, keyLength);
-    printf("hash = %ld , d = %ld",hash,d);
+    //printf("publicKey = %ld , keyLength = %ld , expectedCipher = %ld ," ,publicKey,keyLength,expectedCipher);
+    //long d = decrypt(expectedCipher, publicKey, keyLength);
+   // printf("hash = %ld , d = %ld",hash,d);
     return hash == decrypt(expectedCipher, publicKey, keyLength);
 }
 

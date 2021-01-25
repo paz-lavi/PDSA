@@ -5,12 +5,12 @@ Mac / Linux CLI  tool for digital file signing and digital signature validation 
   
 ## Table of Contents
 
-*  [Install](https://github.com/paz-lavi/Prefy/PDSA/master/README.md#install)
-*  [Create Keys pair](https://github.com/paz-lavi/PDSA/blob/master/README.md#create-keys-pair)
-*  [Sign File](https://github.com/paz-lavi/PDSA/blob/master/README.md#sign-file)
-*  [Validate Signed File](https://github.com/paz-lavi/Prefy/blob/master/README.md#validate-signed-file)
-*  [Validate Key And File](https://github.com/paz-lavi/PDSA/blob/master/README.md#validate-key-and-file)
-*  [License](https://github.com/paz-lavi/PDSA/blob/master/README.md#license)
+*  [Install](https://github.com/paz-lavi/PDSA/tree/main#install)
+ *  [Create Keys pair](https://github.com/paz-lavi/PDSA/tree/main#create-keys-pair)
+*  [Sign File](https://github.com/paz-lavi/PDSA/tree/main#sign-file)
+*  [Validate Signed File](https://github.com/paz-lavi/PDSA/tree/main#validate-signed-file)
+*  [Validate Key And File](https://github.com/paz-lavi/PDSA/tree/main#validate-key-and-file)
+*  [License](https://github.com/paz-lavi/PDSA/tree/main#license)
 
 ## Install 
 
@@ -75,7 +75,7 @@ you may not use this file except in compliance with the License.
 
 You may obtain a copy of the License at
 
-https://github.com/paz-lavi/PDSA/blob/master/LICENSE
+https://github.com/paz-lavi/PDSA/tree/main/LICENSE
 
 Unless required by applicable law or agreed to in writing, software
 

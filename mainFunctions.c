@@ -265,7 +265,7 @@ void parseSignature(char *decoded, long *signature, long *keyLength, long *publi
 
     while ((token = strtok_r(rest, "$", &rest)))
     {
-        printf("\nrest = %s, decode = %s",rest,decoded);
+        //printf("\nrest = %s, decode = %s",rest,decoded);
 
         switch (i++)
         {

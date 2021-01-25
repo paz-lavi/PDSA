@@ -24,3 +24,10 @@
 /validate-key-and-file.o
 /keys-generator.o
 /validate-signed-file.o
+/*.publuc
+/*.private
+*.o
+*.o.dSYM
+*.private
+*/public
+*.txt

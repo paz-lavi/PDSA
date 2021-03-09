@@ -5,7 +5,6 @@ echo "\nvalidate-key-and-file .......... check if signature match to file"
 echo "\nvalidate-signed-file ........... check if signed file is valid (not modified)"
 echo "\nkeys-generator ................. generate new key pair\n"
 echo "\nuninstall ...................... uninstall this CLI tool\n"
-
 }
 
 run_program(){
@@ -24,17 +23,16 @@ run_program(){
     validate-signed-file.o "${@:2}"
     ;;
 
-  
   uninstall)
-    uninstall}"
+    uninstall
     ;;
 
-keys-generator)
+  keys-generator)
     keys-generator.o "${@:2}"
     ;;
 
 
-  help )
+  help)
     usage
     ;;
 
@@ -51,4 +49,3 @@ if [ $# -eq 0 ]
     else
         run_program $@
 fi
-

@@ -24,9 +24,9 @@ run_program(){
     ;;
 
   uninstall)
-    uninstall}"
+    uninstall
     ;;
-    
+
   keys-generator)
     keys-generator.o "${@:2}"
     ;;

@@ -3,7 +3,7 @@ echo "\nUsage:\n   $ pdsa <command> [<args>]\n"
 echo "\nsign-file ...................... sign on a file"
 echo "\nvalidate-key-and-file .......... check if signature match to file"
 echo "\nvalidate-signed-file ........... check if signed file is valid (not modified)"
-echo "\nkeys-generator ................. generate new key pair\n"
+echo "\nkeys-generator ................. generate new key pair"
 echo "\nuninstall ...................... uninstall this CLI tool\n"
 }
 
